@@ -1,0 +1,22 @@
+filetype on
+"autocmd BufnewFile *.cpp :0r ~\Vim\template.cpp
+"autocmd BufnewFile *.cxx :0r ~\Vim\template_file.cxx
+filetype indent on
+syntax enable
+set backspace=2
+map <F1> :w <CR>
+map <F2> :!g++ -std=c++14 -static -Wall -Wextra -Wshadow -Wundef -Wconversion -O2 %<CR>
+map <F3> :!a.exe <CR>
+map <F4> :q <CR>
+map <F5> ggVGy
+set number relativenumber
+colorscheme gruvbox
+set background=dark
+set guifont=Hack:h12:cANSI:qDRAFT
+set lines=59 columns=90
+winpos 1170 10
+set showcmd
+set cursorline
+set showmatch
+set vb t_vb=
+set wildmode=full
